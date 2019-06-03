@@ -93,7 +93,12 @@ public class Testcontroller {
     public void initDate(WebDataBinder binder){
         binder.registerCustomEditor(Date.class, new CustomDateEditor(new SimpleDateFormat("yyyy-MM-dd"),true));
     }
-
+    @RequestMapping("testJson")
+// @ResponseBody
+    public @ResponseBody Item testJson(@RequestBody Item item) {
+        System.out.println(item.getId()+":"+item.getName()+":"+item.getSal());
+        return item;
+    }
 
 
 

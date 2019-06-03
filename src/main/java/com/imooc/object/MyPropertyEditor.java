@@ -2,6 +2,9 @@ package com.imooc.object;
 
 import java.beans.PropertyEditorSupport;
 
+/**
+ * @author Administrator
+ */
 public class MyPropertyEditor extends PropertyEditorSupport {
 
     public void setAsTest(String text) throws IllegalArgumentException {
